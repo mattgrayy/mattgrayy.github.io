@@ -1,98 +1,15 @@
 ﻿<!DOCTYPE html>
-<!-- Template by Quackit.com -->
-<html lang="en">
-<head>
+<html lang="en-us">
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    
-    <link rel="icon" href="./tabIcon.png">
-    <title>MATT GRAY - Portfolio</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
-    <link href="css/custom.css" rel="stylesheet">
-	<script src="Build/UnityLoader.js"></script>
+    <title>Unity WebGL Player | Climb Time</title>
+    <script src="Build/UnityLoader.js"></script>
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/ClimbTimeWeb.json");
     </script>
-</head>
-
-<body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Logo and responsive toggle -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="./index.html">
-                    <!--<span class="glyphicon glyphicon-fire"></span> -->
-                    MATT GRAY
-                </a>
-            </div>
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="./About.html">About</a>
-                    </li>
-                    <li>
-                        <a href="./index.html">Portfolio</a>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="./Contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Content -->
-    <div class="container">
-
-        <!-- Heading -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Climb Time
-                    <small></small>
-                </h1>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <!-- Projects Row -->
-        <div class="row">
-		<div id="gameContainer" style="width: 720px; height: 1280px; margin: auto"></div>
-        </div>
-        <!-- /.row -->
-    </div>
-    <!-- /.container -->
-
-	<footer>
-        <div class="copyright">
-        	<div class="container">
-        		<p>Copyright &copy; Matt Gray 2018</p>
-        	</div>
-        </div>
-	</footer>
-	
-    <!-- jQuery -->
-    <script src="js/jquery-1.11.3.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-</body>
+  </head>
+  <body>
+    <div id="gameContainer" style="width: 720px; height: 1280px; margin: auto"></div>
+  </body>
 </html>
