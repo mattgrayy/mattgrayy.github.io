@@ -264,7 +264,7 @@ exports.ConnectionManager = ConnectionManager;
 // Variable: iPAddress
 // The IP Address that will be used in the <ServiceConnection> to connect to the target
 // WebSocket. This value is settable in the Inspector.
-ConnectionManager.iPAddress = "192.168.1.132";
+ConnectionManager.iPAddress = "81.152.93.136";
 // Variable: port
 // The Port that will be used in the <ServiceConnection> to connect to the target WebSocket.
 // This value is settable in the Inspector.
