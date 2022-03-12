@@ -1,25 +1,202 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
+﻿<!DOCTYPE html>
+<!-- Template by Quackit.com -->
+<html lang="en">
+<head>
     <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Duality</title>
-  </head>
-  <body style="text-align: center">
-    <canvas id="unity-canvas" width=960 height=600 style="width: 960px; height: 600px; background: #231F20"></canvas>
-    <script src="Build/Builds.loader.js"></script>
-    <script>
-      createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/Builds.data.gz",
-        frameworkUrl: "Build/Builds.framework.js.gz",
-        codeUrl: "Build/Builds.wasm.gz",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "EMA",
-        productName: "Duality",
-        productVersion: "0.1",
-        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
-      });
-    </script>
-  </body>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <link rel="icon" href="./tabIcon.png">
+    <title>MATT GRAY - Portfolio</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+    <link href="css/custom.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Logo and responsive toggle -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./index.html">
+                    MATT GRAY
+                </a>
+            </div>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="./About.html">About</a>
+                    </li>
+                    <li class="active">
+                        <a href="./index.html">Portfolio</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="./Contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Content -->
+    <div class="container">
+
+        <!-- Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Portfolio
+                    <small>Recent Work</small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+                    <video class="img-responsive" controls poster="./ipatch.png">
+					  <source src="./i-Patch.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+                </a>
+                <h3>
+                    <a href="./Project_iPatch.html">i-Patch Pirates<small> - Read More</small></a>
+                </h3>
+                <p>A web and mobile based multiplayer exploration 'serious game' teaching staff and students the importance of cyber security through gameplay mechanics.</p>
+				<p><a href="https://piratesgame-ccf9e.firebaseapp.com/ipatch/" target="_blank">Click here to play</a> </p>
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+					<div class="video-responsive">
+						<iframe src="https://www.youtube-nocookie.com/embed/TWuZwe7slJA?modestbranding=1" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+                </a>
+                <h3>
+                    <a href="./Project_ST.html">Speed Titans<small> - Read More</small></a>
+                </h3>
+                <p>A local multiplayer 'serious game' teaching students basic physics as well as team building through gameplay mechanics.</p>
+				<p><a href="https://www.dropbox.com/s/blj3iorjcxix8e8/ST_Build_171123.zip?dl=0" target="_blank">Downloadable here</a> </p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+					<div class="video-responsive">
+						<iframe src="https://www.youtube-nocookie.com/embed/iOEPOpnq5Nk?modestbranding=1" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+                </a>
+                <h3>
+                    <a href="./Project_WP.html">War Pigeon<small> - Read More</small></a>
+                </h3>
+                <p>A single player game jam entry to the Global Game Jam 2018. Winner of Best in Show at one of the largest jam events in the UK.</p>
+				<p><a href="https://www.dropbox.com/s/o6qmdweakboto5c/War%20Pigeon%20v1.0.5.zip?dl=0" target="_blank">Downloadable here</a> </p>
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+                    <div class="video-responsive">
+						<iframe src="https://www.youtube-nocookie.com/embed/yzDRowZagi0?modestbranding=1" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+                </a>
+                <h3>
+                    <a href="./Project_KJ.html">Kojima Drive<small> - Read More</small></a>
+                </h3>
+                <p>A local multiplayer party game comprised of multiple minigames. Part of a full cohort final year project with 25+ students.</p>
+            </div>
+        </div>
+
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+					<div class="video-responsive">
+						<iframe src="https://www.youtube-nocookie.com/embed/LDdpKOeVNAw?modestbranding=1" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+                </a>
+                <h3>
+                    <a href="./Project_TBC.html">The Breakfast Club<small> - Read More</small></a>
+                </h3>
+                <p>A local cooperative multiplayer game where you work together to make breakfast through physics-based movement. Played by the Yogscast and greenlit on Steam.</p>
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+                    <video class="img-responsive" controls poster="./PLE.png">
+					  <source src="./PLE.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+                </a>
+                <h3>
+                    <a href="./Project_PLE.html">Pipeline Express<small> - Read More</small></a>
+                </h3>
+                <p>A single player water management mobile and web 'serious game'.</p>
+            </div>
+        </div>
+
+		
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+                    <div class="video-responsive">
+                        <iframe src="https://www.youtube-nocookie.com/embed/0XUvpnTLtVY?modestbranding=1" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </a>
+                <h3>
+                    <a href="./Project_Glint.html">Glint<small> - Read More</small></a>
+                </h3>
+                <p>A fast-paced local multiplayer game developed for the Global Game Jam 2017.</p>
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+                    <div class="video-responsive">
+                        <iframe src="https://www.youtube-nocookie.com/embed/xwsaCLf0L7c?modestbranding=1" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </a>
+                <h3>
+                    <a href="./Project_AHOD.html">All Hands On Deck<small> - Read More</small></a>
+                </h3>
+                <p>A utility app using GPS to assist the RNLI in speeding up callouts.</p>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+	
+	<footer>
+        <div class="copyright">
+        	<div class="container">
+	            <p>Copyright &copy; Matt Gray 2018</p>
+        	</div>
+        </div>
+	</footer>
+
+	
+    <!-- jQuery -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
 </html>
