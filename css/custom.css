@@ -1,31 +1,26 @@
 body {
     padding-top: 50px;
 	background-color: #222;
+	color: #bdbdbd;
+}
+
+h3 {
+  color: white;
+}
+
+.page-header{
 	color: white;
+	padding-bottom:9px;
+	margin:40px 0 20px;
+	border-bottom:1px solid #eee
 }
 
 .portfolio-item {
     margin-bottom: 25px;
 }
 
-.footer-blurb {
-    padding: 30px 0;
-	text-align: center;
-    background-color: lightskyblue;
-}
-
-.footer-blurb h3 {
-    color: white;
-    }
-    
 .footer-blurb-item {
     padding: 30px 0;
-    }
- 
-.copyright {
-	background-color: #222;
-	text-align: center;
-	padding: 30px 0;
 }
 
 .video-responsive{
@@ -41,4 +36,10 @@ body {
     height:100%;
     width:100%;
     position:absolute;
+}
+
+.copyright {
+	background-color: #222;
+	text-align: center;
+	padding: 30px 0;
 }
