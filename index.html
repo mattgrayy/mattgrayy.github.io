@@ -74,11 +74,20 @@
 			</h3>
 		</div>
 
-        <!-- Projects Row -->
-        <div class="row">
+		<!-- Control buttons -->
+		<div id="myBtnContainer" style="max-width:fit-content; margin: auto;  padding-bottom: 5%">
+			<button class="btn active" onclick="filterSelection('all')"> Show all</button>
+			<button class="btn" onclick="filterSelection('game')"> Games</button>
+			<button class="btn" onclick="filterSelection('jam')"> Game Jams</button>
+			<button class="btn" onclick="filterSelection('prototype')"> Prototypes</button>
+			<button class="btn" onclick="filterSelection('tool')"> Tools</button>
+		</div>
+
+        <!-- Hand Tracking Plugin -->
+        <div class="row filterDiv tool" style="padding-bottom: 5%">
             <div class="col-md-6 portfolio-item">
 				<h3 style="max-width:fit-content; margin: auto; padding: 5%;">
-                    <p>Unity Hand Tracking Plugin</p>
+                    <p>Unity Hand Tracking Plugin (Tooling)</p>
                 </h3>
                 <p>An extensive collection of tooling, systems and documentation for users to develop desktop and XR applications using hand tracking input.</p>
                 <a href="#">
@@ -112,17 +121,11 @@
         </div>
         <!-- /.row -->
 		
-		<div>
-			<h3 style="max-width:fit-content; margin: auto; padding: 2%;">
-				<p style="color: black;">  </p>
-			</h3>
-		</div>
-		
-		<!-- Projects Row -->
-        <div class="row">
+		<!-- Potion in Motion -->
+        <div class="row filterDiv game jam" style="padding-bottom: 5%">
 		    <div class="col-md-6 portfolio-item">
 				<h3 style="max-width:fit-content; margin: auto; padding: 5%;">
-                    <p>Potions in Motion</p>
+                    <p>Potions in Motion (Game Jam)</p>
                 </h3>
                 <p>A single player game jam game where you mix ingredients to make potions as the world gets increasingly more chaotic.</p>
 				
@@ -153,14 +156,8 @@
         </div>
         <!-- /.row -->
 		
-		<div>
-			<h3 style="max-width:fit-content; margin: auto; padding: 2%;">
-				<p style="color: black;">  </p>
-			</h3>
-		</div>
-		
-		<!-- Projects Row -->
-        <div class="row">
+		<!-- Hand Interaction Experiments -->
+        <div class="row filterDiv game tool prototype" style="padding-bottom: 5%">
 			<div class="col-md-6 portfolio-item">
 				<h3 style="max-width:fit-content; margin: auto; padding: 5%;">
                     <p>Hand Tracking Interaction Experiments</p>
@@ -197,14 +194,38 @@
         </div>
         <!-- /.row -->
 		
-		<div>
-			<h3 style="max-width:fit-content; margin: auto; padding: 2%;">
-				<p style="color: black;">  </p>
-			</h3>
-		</div>
+		<!-- Pirate Hex -->
+        <div class="row filterDiv game prototype" style="padding-bottom: 5%">
+            <div class="col-md-6 portfolio-item">
+			    <h3 style="max-width:fit-content; margin: auto; padding: 5%;">
+                    <p>Pirate Hex (Prototype)</p>
+                </h3>
+                <p>A prototype pirate exploration and trading game.</p>
+                <a href="#">
+                    <video class="img-responsive" controls >
+					  <source src="./Images/pirate-hex.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+                </a>
+            </div>
+            <div class="col-md-6 portfolio-item">
+			    <h3>Core Responsibilities</h3>
+                <p>- Solo project, all aspects</p>
+				
+                <h3>Description</h3>
+				<p>Pirate Hex is an extension of the Hexplorers tile flipping mechanic. It allows players to explore endlessly with a custom environment generation system.</p>
+				<p>This prototype explores random island generation and building and object placement.</p>
+
+                <h3>Technical Tasks</h3>
+                <p>- Developing the core movement and camera system</p>
+                <p>- Modifying an existing generation system for island generation</p>
+                <p>- Optimising and balancing</p>
+			</div>
+        </div>
+        <!-- /.row -->
 		
-		<!-- Projects Row -->
-        <div class="row">
+		<!-- TouchFree -->
+        <div class="row filterDiv tool" style="padding-bottom: 5%">
             <div class="col-md-6 portfolio-item">
 			    <h3 style="max-width:fit-content; margin: auto; padding: 5%;">
                     <p>TouchFree - Kiosk and screen control</p>
@@ -238,15 +259,68 @@
 			</div>
         </div>
         <!-- /.row -->
-		
-		<div>
-			<h3 style="max-width:fit-content; margin: auto; padding: 2%;">
-				<p style="color: black;">  </p>
-			</h3>
-		</div>
 
-		<!-- Projects Row -->
-        <div class="row">
+		<!-- Mesh Deformer -->
+        <div class="row filterDiv tool" style="padding-bottom: 5%">
+            <div class="col-md-6 portfolio-item">
+			    <h3 style="max-width:fit-content; margin: auto; padding: 5%;">
+                    <p>Mesh Deformer (Tooling)</p>
+                </h3>
+                <p>A collision-based mesh deformer that is performant, runs in real time and updates collision meshes.</p>
+                <a href="#">
+					<div class="video-responsive">
+						<iframe src="https://www.youtube-nocookie.com/embed/fsApNPMOxOA?modestbranding=1" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+                </a>
+				<p></p>
+                <p style="max-width:fit-content; margin: auto;"><a href="https://assetstore.unity.com/packages/tools/utilities/gm-mesh-deformer-136461" target="_blank">Asset Store Link here</a> </p>
+            </div>
+            <div class="col-md-6 portfolio-item">
+			    <h3>Core Responsibilities</h3>
+                <p>- Solo project, all aspects</p>
+								
+                <h3>Technical Tasks</h3>
+                <p>- Designing usability</p>
+                <p>- Chunking, threading and optimising</p>
+                <p>- Features and user feedback responses</p>
+			</div>
+        </div>
+        <!-- /.row -->
+		
+		<!-- Hexplorers -->
+        <div class="row filterDiv game prototype" style="padding-bottom: 5%">
+            <div class="col-md-6 portfolio-item">
+			    <h3 style="max-width:fit-content; margin: auto; padding: 5%;">
+                    <p>Hexplorers (Prototype)</p>
+                </h3>
+                <p>A prototype exploration and city building game.</p>
+                <a href="#">
+                    <video class="img-responsive" controls >
+					  <source src="./Images/hexplorers.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+                </a>
+            </div>
+            <div class="col-md-6 portfolio-item">
+			    <h3>Core Responsibilities</h3>
+                <p>- Solo project, all aspects</p>
+				
+                <h3>Description</h3>
+				<p>Built on a randomly generated environment, the game can be explored endlessly, saves the state for future sessions and offers players resource management and progression.</p>
+				<p>This prototype explores random world generation and building and object placement.</p>
+
+                <h3>Technical Tasks</h3>
+                <p>- Developing the core movement and camera system</p>
+                <p>- Developing a complex terrain generation system for various biomes</p>
+				<p>- Developing citizen, building and resource management systems</p>
+				<p>- Developing a world save system</p>
+                <p>- Optimising and balancing</p>
+			</div>
+        </div>
+        <!-- /.row -->
+
+		<!-- Penny Pusher -->
+        <div class="row filterDiv game" style="padding-bottom: 5%">
 			<div class="col-md-6 portfolio-item">
 			    <h3 style="max-width:fit-content; margin: auto; padding: 5%;">
                     <p>Penny Pusher</p>
@@ -279,17 +353,11 @@
         </div>
         <!-- /.row -->
 		
-		<div>
-			<h3 style="max-width:fit-content; margin: auto; padding: 2%;">
-				<p style="color: black;">  </p>
-			</h3>
-		</div>
-		
-		<!-- Projects Row -->
-        <div class="row">
+		<!-- Backseat Driver -->
+        <div class="row filterDiv game tool prototype" style="padding-bottom: 5%">
             <div class="col-md-6 portfolio-item">
 			    <h3 style="max-width:fit-content; margin: auto; padding: 5%;">
-                    <p>VR vehicle entertainment concept (Backseat Driver)</p>
+                    <p>Backseat Driver (Demo)</p>
                 </h3>
                 <p>An in-car experience using hand tracking and mid-air haptics to visualize the future of in-car entertainment and connectivity.</p>
                 <a href="#">
@@ -319,21 +387,15 @@
         </div>
         <!-- /.row -->
 		
-		<div>
-			<h3 style="max-width:fit-content; margin: auto; padding: 2%;">
-				<p style="color: black;">  </p>
-			</h3>
-		</div>
-		
-		<!-- Projects Row -->
-        <div class="row">
+		<!-- Not Alone -->
+        <div class="row filterDiv game jam" style="padding-bottom: 5%">
             <div class="col-md-6 portfolio-item">
 			    <h3 style="max-width:fit-content; margin: auto; padding: 5%;">
-                    <p>Not Alone</p>
+                    <p>Not Alone (Game Jam)</p>
                 </h3>
                 <p>A relaxing game jam game where you explore the lost woods and befriend wisps to bring happiness and color to the world.</p>
 				
-                <a href="./Projects/Project_not_alone.html">
+                <a href="#">
 					<div class="video-responsive">
 						<img style='width: 100%; object-fit: contain;' src="./Images/NotAlone.png" alt="Not Alone screenshot" />
 					</div>
@@ -359,17 +421,42 @@
         </div>
         <!-- /.row -->
 		
-		<div>
-			<h3 style="max-width:fit-content; margin: auto; padding: 2%;">
-				<p style="color: black;">  </p>
-			</h3>
-		</div>
+		<!-- Portal Islands -->
+        <div class="row filterDiv game prototype" style="padding-bottom: 5%">
+            <div class="col-md-6 portfolio-item">
+			    <h3 style="max-width:fit-content; margin: auto; padding: 5%;">
+                    <p>Portal Islands (Prototype)</p>
+                </h3>
+                <p>A prototype gathering and questing game.</p>
+                <a href="#">
+                    <video class="img-responsive" controls >
+					  <source src="./Images/portal-islands.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+                </a>
+            </div>
+            <div class="col-md-6 portfolio-item">
+			    <h3>Core Responsibilities</h3>
+                <p>- Solo project, all aspects</p>
+				
+                <h3>Description</h3>
+				<p>Portal Islands is a game prototype that explores gathering and completing quests to support a small town.</p>
+				<p>Built on a system of teleporting to floating islands and gathering resources needed to trade in the main town.</p>
+
+                <h3>Technical Tasks</h3>
+                <p>- Developing the core movement and camera system</p>
+                <p>- Handling saving and loading of inventories, skills and locations</p>
+				<p>- Building data storage systems for items, pickups, values, stats and trading</p>
+                <p>- Optimising and balancing</p>
+			</div>
+        </div>
+        <!-- /.row -->
 		
-		<!-- Projects Row -->
-        <div class="row">
+		<!-- Automotive -->
+        <div class="row filterDiv tool prototype" style="padding-bottom: 5%">
             <div class="col-md-6 portfolio-item">
                 <h3 style="max-width:fit-content; margin: auto; padding: 5%;">
-                    <p>Automotive Touchless Control</p>
+                    <p>Automotive Touchless Control (Demo)</p>
                 </h3>
                 <p>An interactive demo app that combines hand tracking and ultrasonic mid-air haptics to control a vehicle console.</p>
                 <a href="#">
@@ -395,21 +482,15 @@
 			</div>
         </div>
         <!-- /.row -->
-		
-		<div>
-			<h3 style="max-width:fit-content; margin: auto; padding: 2%;">
-				<p style="color: black;">  </p>
-			</h3>
-		</div>
-		
-		<!-- Projects Row -->
-        <div class="row">
+
+		<!-- Planet Wars -->
+        <div class="row filterDiv game prototype" style="padding-bottom: 5%">
             <div class="col-md-6 portfolio-item">
 				<h3 style="max-width:fit-content; margin: auto; padding: 5%;">
-                    <p>Planet Wars</p>
+                    <p>Planet Wars (Prototype)</p>
                 </h3>
                 <p>A single player vs AI mobile game. Take turns to expand, attack and fortify tiles on a hexagon-based globe.</p>
-                <a href="./Projects/Project_planet_wars.html">
+                <a href="#">
 					<div class="video-responsive">
 						<img style='width: 100%; object-fit: contain;' src="./Images/PlanetWars.png" alt="Planet Wars screenshot" />
 					</div>
@@ -432,17 +513,38 @@
         </div>
         <!-- /.row -->
 		
-		<div>
-			<h3 style="max-width:fit-content; margin: auto; padding: 2%;">
-				<p style="color: black;">  </p>
-			</h3>
-		</div>
+		<!-- Level Maker -->
+        <div class="row filterDiv tool" style="padding-bottom: 5%">
+            <div class="col-md-6 portfolio-item">
+				<h3 style="max-width:fit-content; margin: auto; padding: 5%;">
+                    <p>Island Level Maker (Tooling)</p>
+                </h3>
+                <p>A utility tool to quickly generate stylised island meshes inside the Unity Editor.</p>
+                <a href="#">
+					<div class="video-responsive">
+						<iframe src="https://www.youtube-nocookie.com/embed/5mSIHOaLGz0?modestbranding=1" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+                </a>
+				<p></p>
+                <p style="max-width:fit-content; margin: auto;"><a href="https://assetstore.unity.com/packages/tools/modeling/gm-level-maker-224447" target="_blank">Asset Store Link here</a> </p>
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <h3>Core Responsibilities</h3>
+                <p>- All development and design</p>
+				
+                <h3>Technical Tasks</h3>
+                <p>- Integrating spline systems</p>
+                <p>- Usability options and features</p>
+                <p>- Bug fixing and use-case analysis</p>
+			</div>
+        </div>
+        <!-- /.row -->
 		
-		<!-- Projects Row -->
-        <div class="row">
+		<!-- Prizzy and Orb -->
+        <div class="row filterDiv game jam" style="padding-bottom: 5%">
             <div class="col-md-6 portfolio-item">
                 <h3 style="max-width:fit-content; margin: auto; padding: 5%;">
-                    <p>Prizzy and Orb</p>
+                    <p>Prizzy and Orb (Game Jam)</p>
                 </h3>
                 <p>A turn based puzzle game jam game that can be played either Single Player or 2 Player Local Multiplayer.</p>
 				
@@ -472,17 +574,11 @@
         </div>
         <!-- /.row -->
 		
-		<div>
-			<h3 style="max-width:fit-content; margin: auto; padding: 2%;">
-				<p style="color: black;">  </p>
-			</h3>
-		</div>
-		
-		<!-- Projects Row -->
-        <div class="row">
+		<!-- Grid Filler -->
+        <div class="row filterDiv game prototype" style="padding-bottom: 5%">
             <div class="col-md-6 portfolio-item">
                 <h3 style="max-width:fit-content; margin: auto; padding: 5%;">
-                    <p>Grid Filler</p>
+                    <p>Grid Filler (Prototype)</p>
                 </h3>
                 <p>A single player vs AI mobile game. Think Reversi meets Checkers.</p>
                 <a href="#">
@@ -511,17 +607,42 @@
         </div>
         <!-- /.row -->
 		
-		<div>
-			<h3 style="max-width:fit-content; margin: auto; padding: 2%;">
-				<p style="color: black;">  </p>
-			</h3>
-		</div>
-		
-		<!-- Projects Row -->
-        <div class="row">
+		<!-- Tiny Sanctuary -->
+        <div class="row filterDiv game jam" style="padding-bottom: 5%">
+            <div class="col-md-6 portfolio-item">
+			    <h3 style="max-width:fit-content; margin: auto; padding: 5%;">
+                    <p>Tiny Sanctuary (Game Jam)</p>
+                </h3>
+                <p>A pet feeding game jam game.</p>
+                <a href="#">
+                    <video class="img-responsive" controls >
+					  <source src="./Images/sanctuary.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+                </a>
+				<p></p>
+                <p style="max-width:fit-content; margin: auto;"><a href="https://graymatter.itch.io/tiny-sanctuary" target="_blank">Play it here</a> </p>
+            </div>
+            <div class="col-md-6 portfolio-item">
+			    <h3>Core Responsibilities</h3>
+                <p>- Solo project, all aspects</p>
+				
+                <h3>Description</h3>
+				<p>A relaxed cozy game where you feed your blobs to keep them growing and expanding.</p>
+
+                <h3>Technical Tasks</h3>
+                <p>- Developing the core movement and camera system</p>
+                <p>- Developing unique movement system for blobs</p>
+                <p>- Planning and design in an 8hr Game Jam</p>
+			</div>
+        </div>
+        <!-- /.row -->
+
+		<!-- Infinite Pinball -->
+        <div class="row filterDiv game prototype" style="padding-bottom: 5%">
             <div class="col-md-6 portfolio-item">
 				<h3 style="max-width:fit-content; margin: auto; padding: 5%;">
-                    <p>Infinite Pinball</p>
+                    <p>Infinite Pinball (Prototype)</p>
                 </h3>
                 <p>A simplified single player mobile pinball game.</p>
                 <a href="#">
@@ -550,15 +671,9 @@
 			</div>
         </div>
         <!-- /.row -->
-		
-		<div>
-			<h3 style="max-width:fit-content; margin: auto; padding: 2%;">
-				<p style="color: black;">  </p>
-			</h3>
-		</div>
-		
-		<!-- Projects Row -->
-        <div class="row">
+
+		<!-- I-Patch Pirates -->
+        <div class="row filterDiv game" style="padding-bottom: 5%">
             <div class="col-md-6 portfolio-item">
 				<h3 style="max-width:fit-content; margin: auto; padding: 5%;">
                     <p>i-Patch Pirates</p>
@@ -596,15 +711,9 @@
 			</div>
         </div>
         <!-- /.row -->
-		
-		<div>
-			<h3 style="max-width:fit-content; margin: auto; padding: 2%;">
-				<p style="color: black;">  </p>
-			</h3>
-		</div>
-		
-		<!-- Projects Row -->
-        <div class="row">
+
+		<!-- Speed Titans -->
+        <div class="row filterDiv game" style="padding-bottom: 5%">
             <div class="col-md-6 portfolio-item">
                 <h3 style="max-width:fit-content; margin: auto; padding: 5%;">
                     <p>Speed Titans</p>
@@ -643,18 +752,12 @@
 			</div>
         </div>
         <!-- /.row -->
-		
-		<div>
-			<h3 style="max-width:fit-content; margin: auto; padding: 2%;">
-				<p style="color: black;">  </p>
-			</h3>
-		</div>
-		
-		<!-- Projects Row -->
-        <div class="row">
+
+		<!-- War Pigeon -->
+        <div class="row filterDiv game jam" style="padding-bottom: 5%">
             <div class="col-md-6 portfolio-item">
                 <h3 style="max-width:fit-content; margin: auto; padding: 5%;">
-                    <p>War Pigeon</p>
+                    <p>War Pigeon (Game Jam)</p>
                 </h3>
                 <p>A single player game jam entry to the Global Game Jam 2018. Winner of Best in Show at one of the largest jam events in the UK.</p>
                 <a href="#">
@@ -686,14 +789,8 @@
         </div>
         <!-- /.row -->
 		
-		<div>
-			<h3 style="max-width:fit-content; margin: auto; padding: 2%;">
-				<p style="color: black;">  </p>
-			</h3>
-		</div>
-		
-		<!-- Projects Row -->
-        <div class="row">
+		<!-- Kojima Drive -->
+        <div class="row filterDiv game" style="padding-bottom: 5%">
             <div class="col-md-6 portfolio-item">
                 <h3 style="max-width:fit-content; margin: auto; padding: 5%;">
                     <p>Kojima Drive</p>
@@ -724,17 +821,11 @@
         </div>
         <!-- /.row -->
 		
-		<div>
-			<h3 style="max-width:fit-content; margin: auto; padding: 2%;">
-				<p style="color: black;">  </p>
-			</h3>
-		</div>
-		
-		<!-- Projects Row -->
-        <div class="row">
+		<!-- Brunch Club -->
+        <div class="row filterDiv game" style="padding-bottom: 5%">
             <div class="col-md-6 portfolio-item">
                 <h3 style="max-width:fit-content; margin: auto; padding: 5%;">
-                    <p>The Breakfast (Brunch) Club</p>
+                    <p>Brunch Club</p>
                 </h3>
                 <p>A local cooperative multiplayer game where you work together to make breakfast through physics-based movement. Played by the Yogscast and greenlit on Steam.</p>
                 <a href="#">
@@ -761,14 +852,8 @@
         </div>
         <!-- /.row -->
 		
-		<div>
-			<h3 style="max-width:fit-content; margin: auto; padding: 2%;">
-				<p style="color: black;">  </p>
-			</h3>
-		</div>
-		
-		<!-- Projects Row -->
-        <div class="row">
+		<!-- Pipeline Express -->
+        <div class="row filterDiv game" style="padding-bottom: 5%">
             <div class="col-md-6 portfolio-item">
                 <h3 style="max-width:fit-content; margin: auto; padding: 5%;">
                     <p>Pipeline Express</p>
@@ -798,18 +883,12 @@
 			</div>
         </div>
         <!-- /.row -->
-		
-		<div>
-			<h3 style="max-width:fit-content; margin: auto; padding: 2%;">
-				<p style="color: black;">  </p>
-			</h3>
-		</div>
-		
-		<!-- Projects Row -->
-        <div class="row">
+
+		<!-- Glint -->
+        <div class="row filterDiv game jam" style="padding-bottom: 5%">
             <div class="col-md-6 portfolio-item">
                 <h3 style="max-width:fit-content; margin: auto; padding: 5%;">
-                    <p>Glint</p>
+                    <p>Glint (Game Jam)</p>
                 </h3>
                 <p>A fast-paced local multiplayer game developed for the Global Game Jam 2017.</p>
                 <a href="#">
@@ -839,14 +918,8 @@
         </div>
         <!-- /.row -->
 		
-		<div>
-			<h3 style="max-width:fit-content; margin: auto; padding: 2%;">
-				<p style="color: black;">  </p>
-			</h3>
-		</div>
-		
-		<!-- Projects Row -->
-        <div class="row">
+		<!-- AHOD -->
+        <div class="row filterDiv tool" style="padding-bottom: 5%">
             <div class="col-md-6 portfolio-item">
                 <h3 style="max-width:fit-content; margin: auto; padding: 5%;">
                     <p>All Hands On Deck</p>
@@ -875,14 +948,7 @@
 			    <p>- Sending and receiving of messages using database</p>
 			</div>
         </div>
-        <!-- /.row -->
-		
-		<div>
-			<h3 style="max-width:fit-content; margin: auto; padding: 2%;">
-				<p style="color: black;">  </p>
-			</h3>
-		</div>
-		
+        <!-- /.row -->		
     </div>
     <!-- /.container -->
 	
@@ -900,6 +966,58 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+	
+	<!-- Filter Buttons -->
+	<script>
+	filterSelection("all")
+	function filterSelection(c) {
+		var x, i;
+		x = document.getElementsByClassName("filterDiv");
+		if (c == "all") c = "";
+		// Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+		for (i = 0; i < x.length; i++) {
+			w3RemoveClass(x[i], "show");
+			if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+		}
+	}
+
+	// Show filtered elements
+	function w3AddClass(element, name) {
+		var i, arr1, arr2;
+		arr1 = element.className.split(" ");
+		arr2 = name.split(" ");
+		for (i = 0; i < arr2.length; i++) {
+			if (arr1.indexOf(arr2[i]) == -1) {
+				element.className += " " + arr2[i];
+			}
+		}
+	}
+
+	// Hide elements that are not selected
+	function w3RemoveClass(element, name) {
+		var i, arr1, arr2;
+		arr1 = element.className.split(" ");
+		arr2 = name.split(" ");
+		for (i = 0; i < arr2.length; i++) {
+			while (arr1.indexOf(arr2[i]) > -1) {
+				arr1.splice(arr1.indexOf(arr2[i]), 1);
+			}
+		}
+		element.className = arr1.join(" ");
+	}
+
+	// Add active class to the current control button (highlight it)
+	var btnContainer = document.getElementById("myBtnContainer");
+	var btns = btnContainer.getElementsByClassName("btn");
+	for (var i = 0; i <= btns.length; i++) {
+		btns[i].addEventListener("click", function() {
+			var current = document.getElementsByClassName("btn active");
+			current[0].className = current[0].className.replace("active", "");
+			this.className += " active";
+		});
+	}
+	</script>
+	
 </body>
 
 </html>
